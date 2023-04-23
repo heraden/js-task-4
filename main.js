@@ -7,7 +7,7 @@ function suggestTable(numGuests) {
    } else if (numGuests <= 8) {
      tableSize = "large table ";
   } else {
-     return "Sorry, we are not able to accommodate your group in one table.";
+     return " we cant to accommodate your group in one table.";
    }
    return ${tableSize};
  }
