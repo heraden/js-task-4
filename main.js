@@ -1,16 +1,13 @@
-document.getElementById("bottom").addEventListener("click", function () { 
-    event.preventDefault(); 
-        let guestNumber = document.getElementById("guestsnumber").value  
-         const small = "small table" 
-         const medium = "medium table"  
-         const large = "large table" 
-         
-       if (guestNumber<=2) {  
-         return console.log(small)}  
-         if (guestNumber<= 4 ) {  
-           return console.log(medium)}  
-         if (guestNumber<=8){  
-           return console.log(large)  
-         }  
-             
-         } )
+function suggestTable(numGuests) {
+  let tableSize;
+  if (numGuests <= 2) {
+     tableSize = "small table";
+  } else if (numGuests <= 4) {
+     tableSize = "medium table";
+   } else if (numGuests <= 8) {
+     tableSize = "large table ";
+  } else {
+     return "Sorry, we are not able to accommodate your group in one table.";
+   }
+   return ${tableSize};
+ }
